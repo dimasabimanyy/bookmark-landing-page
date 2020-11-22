@@ -127,6 +127,7 @@ a{
 
 #hero{
     position: relative;
+    height: 550px;
 }
 
 #hero:after{
@@ -146,7 +147,7 @@ a{
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 3rem;
-    height: 85vh;
+    height: 100%;
 }
 
 .hero-text{
@@ -255,10 +256,6 @@ a{
     margin: 1rem 0 2rem;
 }
 
-
-
-
-
 /* EXTENSION SECTION */
 
 #extension{
@@ -266,9 +263,52 @@ a{
 }
 
 .extension-wrapper{
-    width: 1000px;
+    width: 900px;
     margin: 0 auto;
 }
+
+.extension-title{
+    width: 500px;
+    margin: 0 auto;
+    text-align-last: center;
+}
+
+.extension-title p{
+    margin: 1rem 0 2rem;
+}
+
+.extension-items{
+    display: flex;
+    gap: 2rem;
+}
+
+.extension-item{
+    text-align: center;
+    height: 350px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    padding: 3rem 0;
+}
+
+.extension-item h5{
+    margin: .8rem 0 .4rem;
+}
+
+.extension-item:nth-child(2){
+    margin-top: 4rem;
+}
+
+.extension-item:nth-child(3){
+    margin-top: 8rem;
+}
+
+.dots{
+    margin: 2rem 0;
+}
+
+.extension-item a{
+    font-size: .9rem;
+}
+
 
 /* FAQ SECTION */
 
