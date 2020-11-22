@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Rubik', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6{
+    color: #252b46;
+    font-weight: 600;
+}
+
+h1{
+    font-size: 3rem;
+}
+h2{
+    font-size: 2.5rem;
+}
+h3{
+    font-size: 2rem;
+}
+h4{
+    font-size: 1.6rem;
+}
+h5{
+    font-size: 1.3rem;
+}
+h6{
+    font-size: 1rem;
+}
+
+
+a,p {
+    text-decoration: none;
+    font-size: 17px;
+    line-height: 25px;
+}
+
+p{
+    color: hsl(229, 8%, 60%);
+}
+a{
+    color: #252b46d8;
+}
+
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.btn{
+    padding: .5rem 1.6rem;
+    color: #ffffff;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+    transition: .3s;
+    outline: none;
+}
+
+.btn-red{
+    background: hsl(0, 94%, 66%);
+    border: 2px solid hsl(0, 94%, 66%);
+}
+
+.btn-red:hover{
+    background: #ffffff;
+    color: hsl(0, 94%, 66%);
+}
+
+.btn-blue{
+    background: hsl(231, 69%, 60%);
+    border: 2px solid hsl(231, 69%, 60%);
+}
+
+.btn-blue:hover{
+    background: #ffffff;
+    color: hsl(231, 69%, 60%);
+}
+
+.btn-grey{
+    background: #f0f0f0;
+    border: 2px solid #f0f0f0;
+    color: #252b46d8;
+    box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+}
+.btn-grey:hover{
+    background: #ffffff;
+    border: 2px solid #9c9c9ccc;
+}
+
+/* HEADER SECTION */
+
+.header-wrapper{
+    display: flex;
+    justify-content: space-between;
+    height: 90px;
+    align-items: center;
+}
+
+.nav-links{
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li{
+    margin-left: 2.5rem;
+    text-transform: uppercase;
+}
+
+.nav-links li a{
+    letter-spacing: 1px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: .2s;    
+}
+
+.nav-links li a:hover{
+    color: #ff3535;
+}
+
+/* HERO SECTION */
+
+#hero{
+    position: relative;
+}
+
+#hero:after{
+    content: "";
+    width: 40%;
+    height: 300px;
+    background: hsl(231, 69%, 60%);
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border-top-left-radius: 150px;
+    border-bottom-left-radius: 150px;
+    z-index: -1;
+}
+
+.hero-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    height: 85vh;
+}
+
+.hero-text{
+    margin: auto 0;
+}
+
+.hero-text p{
+    margin: 1.5rem 0 2.2rem;
+}
+
+.hero-image{
+    margin: auto 0;
+}
+
+.hero-btn a{
+    margin-right: 1rem;
+}
+
+/* FEATURES SECTION */
+
+#features{
+    padding: 5rem 0;
+}
+
+.features-wrapper{
+    text-align: center;
+}
+
+.features-text{
+    width: 600px;
+    margin: 0 auto;
+}
+
+.features-text h3{
+    margin-bottom: 1.2rem;
+}
+
+/* Tab */
+
+
+[data-tab-content] {
+    display: none;
+}
+  
+.active[data-tab-content] {
+    display: block;
+}
+  
+.tabs {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid black;
+}
+  
+.tab {
+    cursor: pointer;
+    padding: 10px;
+}
+  
+.tab.active {
+    background-color: #CCC;
+}
+  
+.tab:hover {
+    background-color: #AAA;
+}
+  
+.tab-content {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+  
+
+/* EXTENSION SECTION */
+
+#extension{
+    padding: 5rem 0;
+}
+
+.extension-wrapper{
+    width: 1000px;
+    margin: 0 auto;
+}
+
+/* FAQ SECTION */
+
+
+
+/* EMAIL SECTION */
+
+#email{
+    padding: 5rem 0;
+    background: hsl(231, 69%, 60%);
+}
+
+.email-wrapper{
+    width: 450px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.email-wrapper h6{
+    color: #ffffff;
+    font-weight: 400;
+    font-size: .9rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.email-wrapper h3{
+    color: #ffffff;
+    font-weight: 500;
+    margin: 1.2rem 0;
+}
+
+.email-form{
+    display: grid;
+    grid-template-columns: 1fr 150px;
+    gap: 1rem;
+}
+
+.email-form input{
+    padding: .9rem;
+    outline: none;
+    border: none;
+    font-family: "Rubik", sans-serif;
+    font-size: .9rem;
+    border-radius: 5px;
+}
+
+.email-form button{
+    font-family: "Rubik", sans-serif;
+    font-size: .9rem;
+    cursor: pointer;
+}
+
+/* FOOTER SECTION */
+
+footer{
+    padding: 3rem 0;
+    background: hsl(229, 31%, 21%);
+}
+
+.footer-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-text{
+    display: flex;
+    align-items: center;
+}
+
+.footer-logo{
+    margin-right: 3rem;
+}
+
+.footer-link{
+    display: flex;
+    list-style: none;
+}
+
+.footer-link a {
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin-left: 2rem;
+    text-transform: uppercase;
+}
+
+.footer-social a i{
+    color: #ffffff;
+    font-size: 1.7rem;
+    margin-left: 2rem;
+}
+
+
+
+
+
+
