@@ -14,3 +14,13 @@ tabs.forEach(tab => {
     target.classList.add('active')
   })
 })
+
+// Accordion faq
+
+const accordion = document.getElementsByClassName('faq-item')
+
+for(i = 0; i < accordion.length; i++){
+    accordion[i].addEventListener('click', function(){
+        this.classList.toggle('active')
+    })
+}

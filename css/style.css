@@ -312,7 +312,59 @@ a{
 
 /* FAQ SECTION */
 
+#faq{
+    padding: 5rem 0;
+}
 
+.faq-wrapper{
+    width: 500px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.faq-info{
+    margin: 1rem 0 3rem;
+}
+
+.faq-accordion{
+    width: 500px;
+}
+
+.faq-item{
+    position: relative;
+}
+
+.faq-item .label{
+    position: relative;
+    padding: 1rem 0;
+    cursor: pointer;
+    font-size: 1.1rem;
+}
+
+.faq-item .label {
+    color: #585858;
+    border-top: 2px solid #cfcfcf4d;
+}
+
+.faq-item:last-child {
+    border-bottom: 2px solid #cfcfcf4d;
+}
+
+.faq-item .content{
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    transition: .5s;
+    text-align: left;
+}
+
+.faq-item.active .content{
+    height: 150px;
+}
+
+.faq-item .label:hover, .faq-item.active .label{
+    color: #ff3535;
+}
 
 /* EMAIL SECTION */
 
